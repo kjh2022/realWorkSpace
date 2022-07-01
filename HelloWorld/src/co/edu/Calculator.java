@@ -1,14 +1,16 @@
 package co.edu;
 
 public class Calculator {
-	static char[] weeks = {'일','월','화','수','목','금','토'};
-	static int[] lastday = {31,28,31,30,31,30,31,31,30,31,30,31};
-	
 	public static void main(String[] args) {
-	}
-
-	private static void makeCalendar(int i) {
-		// TODO Auto-generated method stub
+		
+		String name = "감자바";
+		int age = 25;
+		String tel1 = "010", tel2 = "123", tel3 = "4567";
+		
+		System.out.println("이름: " + name);
+		System.out.print("나이: " + age);
+		System.out.printf("\n전화: %s-%s-%s", tel1, tel2, tel3);
+	
 		
 	}
 	
