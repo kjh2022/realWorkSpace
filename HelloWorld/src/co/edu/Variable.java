@@ -23,6 +23,8 @@ public class Variable {
 					System.out.print("*");					
 				}
 			System.out.println();
+			//이력 변경 추가했다 2022.07.01 12:55
+			System.out.println("소스코드이력변경추가 ㅋ");
 		}
 	}
 }
