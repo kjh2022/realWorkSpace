@@ -10,21 +10,20 @@ public class Example4 {
 
 		int temp = (int) (Math.random() * 100) + 1;
 		System.out.println("값을 입력하세요.");
-		int inputVal = scan.nextInt();
 		while (true) {
+			int inputVal = scan.nextInt();
 
 			if (inputVal == temp) {
 				System.out.println("맞췄습니다.");
+				break;
 			} else if (inputVal > temp) {
 				System.out.println(inputVal + "보다 작습니다.");
-				break;
+
 			} else if (inputVal < temp) {
 				System.out.println(inputVal + "보다 큽니다.");
-				break;
 			}
-			System.out.println("end of pregram.");
-			// scan.close();
-
 		}
+		System.out.println("end of pregram.");
+		scan.close();
 	}
 }
