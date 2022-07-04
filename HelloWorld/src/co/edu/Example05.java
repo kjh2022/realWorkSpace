@@ -26,6 +26,7 @@ public class Example05 {
 		} else {
 			result = num2 - num1;	
 			System.out.printf("입력값 %d와 %d의 차이는 %d 입니다.", num1, num2, result);
+		sn.close();
 		}
 	}
 }
