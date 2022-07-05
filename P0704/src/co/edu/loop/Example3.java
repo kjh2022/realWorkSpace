@@ -12,6 +12,7 @@ public class Example3 {
 			System.out.println("임의의 값을 입력하세요.");
 			int num = scan.nextInt();
 			sum += num;
+			// 추가
 			// 누적값이 100을 초과하기 전의 값을 출력
 
 			if (sum > 100) {

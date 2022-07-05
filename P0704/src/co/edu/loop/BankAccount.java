@@ -6,7 +6,7 @@ public class BankAccount {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		// 1.입금, 2.출금, 3.잔액조회, 4.종료? 어캐했노?수고하십쇼
+		// 1.입금, 2.출금, 3.잔액조회, 4.종료
 		int valance = 0;
 
 		while (true) {

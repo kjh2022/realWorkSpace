@@ -18,13 +18,12 @@ public class Example4 {
 				break;
 			} else if (inputVal > temp) {
 				System.out.println(inputVal + "보다 작습니다.");
+
 			} else if (inputVal < temp) {
 				System.out.println(inputVal + "보다 큽니다.");
-				
 			}
-			// scan.close();
-
 		}
 		System.out.println("end of pregram.");
+		scan.close();
 	}
 }
