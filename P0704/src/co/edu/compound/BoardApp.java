@@ -3,16 +3,39 @@ package co.edu.compound;
 import java.util.Date;
 import java.util.Scanner;
 
-//게시글 등록 / 조회/ 수정/ 삭제/ 리스트/ 종료 => 배열에 저장
-//BoardApp 
+/* BoardApp 
+ * 게시글 등록 / 조회/ 수정/ 삭제/ 리스트/ 종료 => 배열에 저장
+ * id : user1. passwd:1212 로그인되었습니다.
+ * id, pw가 틀리면 ->아이디와 비밀번호를 확인하세요 라는 메시지가 뜨도록
+ */
 public class BoardApp {
 
 	public static void main(String[] args) {
 		Board[] Boards = new Board[100];
 		Scanner scan = new Scanner(System.in);
 
-		boolean run = true;
+		// 로그인 처리 기능
+		String ID = "user1";
+		String Password = "1212";
+		boolean log = true;
 
+		while (log) {
+
+			System.out.println("아이디를 입력하세요.");
+			String id = scan.nextLine();
+
+			System.out.println("비밀번호를 입력하세요.");
+			String pw = scan.nextLine();
+
+			if (id.equals(ID) && pw.equals(Password)) {
+				System.out.println("정상적으로 로그인 되었습니다.");
+				break;
+			} else if (id != ID || pw != Password) {
+				System.out.println("로그인에 실패했습니다. 아이디와 비밀번호를 확인해 주세요.");
+			} 
+		}
+
+		boolean run = true;
 		while (run) {
 			System.out.println("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
 			System.out.println("1.게시글 등록 2.조회 3.수정 4.삭제 5.리스트 6.종료");
