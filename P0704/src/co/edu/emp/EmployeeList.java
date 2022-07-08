@@ -78,28 +78,50 @@ public class EmployeeList {
 	// 말일 정보
 	private int getLastDate(int mon) {
 		switch (mon) {
-		case 6:
-			return 30;
+		case 1:
+		case 3:
+		case 5:
 		case 7:
+		case 8:
+		case 10:
+		case 12:
 			return 31;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
 		default:
-			return 30;
+			return 28;
 		}
 	}
 
 	// 1일의 요일정보
 	private int getDayInfo(int mon) {
 		switch (mon) {
-		case 6:
-			return 3; //첫째날의 요일정보
+		case 1:
+		case 10:
+			return 6;
+		case 2:
+		case 3:
+		case 11:
+			return 2;
+		case 4:
 		case 7:
 			return 5;
-		default:
+		case 5:
 			return 0;
+		case 6:
+			return 3; // 첫째날의 요일정보
+		case 8:
+			return 1;
+		case 9:
+			return 4;
+		case 12:
+			return 4;
 		}
+		return 0;
 	}
-	//달력
-	
+	// 달력
 
 //	캘린더 클래스 or반복문만 사용해서 달력만들기. 요일정보, 1일의 위치, 말일의 날짜가 며칠까지인지가 나오게
 	// 월 정보 입력시

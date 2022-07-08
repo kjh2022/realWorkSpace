@@ -1,8 +1,5 @@
-package co.edu.emp;
+package co.edu.interfaces.emp0708;
 
-/*클래스 사원번호, 이름, 부서번호, 부서명, 급여
- * 이메일, 
- */
 public class Employee {
 	private int employeeId; // 사번
 	private String name; // 아이디
@@ -10,7 +7,6 @@ public class Employee {
 	private String departmentName;// 부서명
 	private String salary; // 급여
 	private String email; // 이메일
-	
 
 	// 생성자;
 	public Employee() {
@@ -39,7 +35,9 @@ public class Employee {
 		this(employeeId, name, salary, 30);
 	}
 
-//	상세정보를 반환해주는 메소드
+
+
+	//	상세정보를 반환해주는 메소드
 	public String getDetailInfo() {
 //		사원번호, 이름, 급여정보, 부서정보
 		String info = "사원번호: " + employeeId + ", 이름: " + name + ", 급여" + salary;
