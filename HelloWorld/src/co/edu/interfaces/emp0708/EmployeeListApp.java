@@ -18,19 +18,19 @@ public class EmployeeListApp {
 			int selectNo = Integer.parseInt(scn.nextLine());
 			if(selectNo == 1) {
 				
-			}else if(selecNo == 2) {
+			}else if(selectNo == 2) {
 				app.input();
 				
-			}else if(selecNo == 3) {
+			}else if(selectNo == 3) {
 				app.printList();
 				
-			}else if(selecNo == 4) {
+			}else if(selectNo == 4) {
 				System.out.println("검색할 사번 입력> ");
 				int empId = Integer.parseInt(scn.nextLine());
 				Employee emp = app.search(empId);
 				System.out.println(emp.getDetailInfo());
 				
-			}else if(selecNo == 9) {
+			}else if(selectNo == 9) {
 				
 			}else {
 				System.out.println("잘못 입력하셨습니다. 다시 선택해 주세요.");
