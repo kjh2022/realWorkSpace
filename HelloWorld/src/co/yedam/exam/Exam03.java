@@ -11,14 +11,10 @@ import java.util.Scanner;
 public class Exam03 {
 	public static void main(String[] args) {
 		int[] intAry = new int[3];
-		Scanner scn = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 		
-		boolean run = true;
-		while (run) {
-		System.out.println("배열 칸에 들어갈 숫자를 세번 입력하세요.> ");
-		int No = scn.nextInt();
+		System.out.println("값을 입력하세요> " );
 		
-		}
 
 	}
 }
