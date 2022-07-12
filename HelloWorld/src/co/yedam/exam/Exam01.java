@@ -7,7 +7,6 @@ package co.yedam.exam;
  */
 public class Exam01 {
 	public static void main(String[] args) {
-		boolean run = true;
 		int num1 = 65;
 		int num2 = 55;
 		int result = 0;
