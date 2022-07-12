@@ -3,7 +3,7 @@ package co.edu.homework;
 public class Student {
 	private String studentNum;
 
-	public Student(String StudentNum) {
+	public Student(String studentNum) {
 		this.studentNum = studentNum;
 	}
 
