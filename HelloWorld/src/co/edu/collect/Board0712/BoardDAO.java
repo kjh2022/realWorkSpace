@@ -38,7 +38,6 @@ public class BoardDAO {
 			if (board.getWriter().equals(writer)) {
 				list.add(board);
 				isIn = true;
-				break;
 			}
 
 		}
@@ -50,12 +49,16 @@ public class BoardDAO {
 
 //	4.삭제(제목을 입력하면 삭제되도록)
 	public void remove(String title) {
+		boolean isIn = false;
 		for (int i = 0; i < list.size(); i++) {
 			if (list.get(i).getTitle().equals(title)) {
 				list.remove(i);
 				System.out.println("삭제 완료되었습니다.");
-				break;
+				isIn = true;
 			}
+		}
+		if (!isIn) {
+			System.out.println("제목이 일치하지 않아 삭제할 수 없습니다.");
 		}
 	}
 }
