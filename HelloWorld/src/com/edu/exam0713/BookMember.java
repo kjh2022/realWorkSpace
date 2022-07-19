@@ -16,7 +16,7 @@ public class BookMember extends Member {
 
 	@Override
 	public String toString() {
-		return "BookMember [회원 아이디" + getMemberId() + "이름=" + getMemberName() + //
+		return "도서부 회원 [회원 아이디" + getMemberId() + "이름=" + getMemberName() + //
 				", 연락처= " + getPhone() + ", 반장 이름=" + headN + ", 강의실=" + roomN + "]";
 	}
 

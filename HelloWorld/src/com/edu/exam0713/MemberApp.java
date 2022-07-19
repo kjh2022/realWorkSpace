@@ -73,6 +73,10 @@ public class MemberApp implements MemberService {
 				}
 
 			} else if (selNo == 3) {
+				List<Member> list = memberList();
+				if (members.isEmpty()) {
+					System.out.println("회원 정보가 없습니다.");
+				}
 			} else if (selNo == 9) {
 				System.out.println("프로그램을 종료합니다.");
 				run = false;

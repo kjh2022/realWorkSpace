@@ -14,8 +14,26 @@ public class SwimMember extends Member {
 		this.swimLv = swimLv;
 	}
 
+
+	public String getTeacher() {
+		return teacher;
+	}
+
+	public void setTeacher(String teacher) {
+		this.teacher = teacher;
+	}
+
+	public String getSwimLv() {
+		return swimLv;
+	}
+
+	public void setSwimLv(String swimLv) {
+		this.swimLv = swimLv;
+	}
+
+// 정보출력시 강사이름, 등급이 나오게
 	public String toString() {
-		return "BookMember [회원 아이디=" + getMemberId() + "이름=" + getMemberName() + //
+		return "수영부 회원 [회원 아이디=" + getMemberId() + "이름=" + getMemberName() + //
 				", 연락처= " + getPhone() + ", 강사 이름=" + teacher + ", 수영 등급=" + swimLv + "]";
 	}
 

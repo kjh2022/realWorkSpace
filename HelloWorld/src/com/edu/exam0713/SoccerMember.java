@@ -15,7 +15,7 @@ public class SoccerMember extends Member {
 	}
 
 	public String toString() {
-		return "BookMember [회원 아이디= " + getMemberId() + "이름=" + getMemberName() + //
+		return "축구부 회원 [회원 아이디= " + getMemberId() + "이름=" + getMemberName() + //
 				", 연락처= " + getPhone() + ", 코치 이름=" + cochN + ", 락커룸=" + lockN + "]";
 	}
 

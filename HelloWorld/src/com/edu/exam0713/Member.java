@@ -45,7 +45,7 @@ public class Member {
 
 	@Override
 	public String toString() {
-		return "Member [memberId=" + memberId + ", memberName=" + memberName + ", phone=" + phone + "]";
+		return "회원 정보 [memberId=" + memberId + ", memberName=" + memberName + ", phone=" + phone + "]";
 	}
 
 }
