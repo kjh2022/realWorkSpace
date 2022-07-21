@@ -37,7 +37,7 @@ public class homework3 {
 		// HiNT : 이중 IF문 사용
 		int year = 0;
 		System.out.println("년도 입력");
-		year = Integer.parseInt(scan.nextLine());
+		year = scan.nextInt();
 		if (year % 4 == 0 && year != 0 || year % 400 == 0) {
 			System.out.println(year + "년은 윤년입니다.");
 		} else {
