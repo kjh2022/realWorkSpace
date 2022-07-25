@@ -1,4 +1,4 @@
-package T20220719R.src.com.edu;
+package com.edu;
 
 public class Student {
 	// 학생번호, 학생이름, 점수

@@ -1,4 +1,4 @@
-package T20220719R.src.com.edu;
+package com.edu;
 
 import java.util.ArrayList;
 import java.util.List;

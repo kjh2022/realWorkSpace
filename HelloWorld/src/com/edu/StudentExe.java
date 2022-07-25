@@ -1,4 +1,4 @@
-package T20220719R.src.com.edu;
+package com.edu;
 
 public class StudentExe {
 	public static void main(String[] args) {

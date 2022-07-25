@@ -1,4 +1,4 @@
-package T20220719R.src.com.edu;
+package com.edu;
 
 public class CollegeStudent extends Student {
 //	대학생정보 : 담당교수, 전공과목 정보 추가.
