@@ -5,6 +5,8 @@ public class EmpDept extends Employee {
 	public static void main(String[] args) {
 		EmpDept dept = new EmpDept("이지나", 3000, "교육부");
 		dept.getInformation();
+		
+		dept.print();
 	}
 
 	private String deptName;
@@ -20,16 +22,12 @@ public class EmpDept extends Employee {
 
 	@Override
 	public void getInformation() {
-		System.out.printf(", 부서: %s", getDeptName());
-//		super.getInformation();
-//		this.getDeptName();
-
+		System.out.printf("이름: %s, 연봉: %d, 부서:%s\n", getName(), getSalary(), deptName);
 	}
 
 	@Override
 	public void print() {
-		System.out.println("\n서브 클래스");
-		// super.print();
+		System.out.print("수퍼클래스\n서브 클래스");
 
 	}
 
