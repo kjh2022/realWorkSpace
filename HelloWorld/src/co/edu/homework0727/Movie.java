@@ -7,9 +7,9 @@ package co.edu.homework0727;
 //제목, 참여감독 수, 참여배우 수, 관객수, 총점, 평점을 출력하는 기능
 public class Movie extends Culture {
 	
-	
-	private String genre;
-	
+//	필드
+	String genre;
+//	생성자
 	public Movie(String title, int pd, int actor, String genre) {
 		super(title, pd, actor);
 		this.genre = genre;
@@ -18,7 +18,7 @@ public class Movie extends Culture {
 	public String getGenre() {
 		return genre;
 	}
-
+//	메소드
 	@Override
 	public void getInformation() {
 		System.out.printf("제목: %s(장르: %s)\n 감독: %d\n 배우:%d\n 영화총점: %d\n 영화평점: %s\n",//

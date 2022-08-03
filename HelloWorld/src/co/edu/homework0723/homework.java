@@ -12,31 +12,31 @@ public class homework {
 		for (int i = 0; i < arr1.length; i++) {
 			if (arr1[i] == 60) {
 				int idxNo = i;
-				System.out.println("60인곳의 인덱스는" + idxNo + "번 입니다.");
+				System.out.println("60인곳의 인덱스는" + (idxNo+1) + "번 입니다.");
+				break;
 			}
 		}
 
 		// 문제2. 주어진 배열의 인덱스가 3인 곳은 출력하지 말고, 나머지만 출력해보자.
 		for (int i = 0; i < arr1.length; i++) {
-			if (i == 3) {
-				continue;
+			if (i != 3) {
+				System.out.print(arr1[i] + " ");
 			}
-			System.out.print(arr1[i] + " ");
 		}
 		System.out.println();
 		// 문제3. 주어진 배열 안의 변경하고 싶은 값의 인덱스 번호를 입력받아, 그 값을 1000으로 변경해보자.
 		// 입력) 인덱스: 3 -> {10, 20, 30, 1000, 3, 60, -3}
 		System.out.println("바꾸려는 인덱스 번호 입력");
-		int selNo = Integer.parseInt(scan.nextLine());
+		int selNo = Integer.parseInt(scan.nextLine());//숫자 외 문자값을 넣으면 변환이 안된다 넘버포멧오류
 		arr1[selNo] = 1000;
 
-		String chNo = "";
 		System.out.print("변경하고 싶은 인덱스 번호 " + selNo + "번의 입력 결과 :");
 		for (int i = 0; i < arr1.length; i++) {
 			System.out.print(arr1[i] + " ");
 		}
 		System.out.println("\n");
-		// 문제4. 주어진 배열의 요소에서 최대값과 최소값을 구해보자.
+		// 문제4. 주어진 배열의 요소에서 최대값과 최소값을 구해보자. 
+//		최솟값을 선언할때는 아래처럼 배열의 0번을 min으로 하는게 더 낫다
 		int max = 0, min = arr1[0];
 		for (int i = 0; i < arr1.length; i++) {
 			if (arr1[i] > max) {

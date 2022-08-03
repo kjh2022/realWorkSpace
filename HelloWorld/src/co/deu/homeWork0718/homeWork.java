@@ -40,6 +40,10 @@ public class homeWork {
 		// 문제4) 변수 val의 값이 양수일 경우엔 변수 값을, 아닐 경우엔 0을 담는 변수를 선언하세요. (단, 삼항연산자를 사용)
 		int intResult = (0 < val) ? val : 0;
 		System.out.println(intResult);
+//		문제 4번 리뷰
+		int var = 1;
+		int var2 = var>0 ? var : 0;
+		System.out.println(var2);
 
 		/*
 		 * 문제 5) 다음과 같이 두 개의 정수가 주어졌을 경우 두 정 수 중에서 음수가 있다면 'One of a or b is negative
@@ -52,6 +56,10 @@ public class homeWork {
 		strResult = (a < 0 || b < 0) ? "One of a or b is negative number" : //
 				"both a and b are zero or more";
 		System.out.println(strResult);
+		
+//		리뷰 5번 다시
+		
+		
 	}
 
 }
